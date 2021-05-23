@@ -1,0 +1,140 @@
+% !TeX program = xelatex
+\documentclass{article}
+\usepackage{npu-report-style}
+%\usepackage[pagebackref=true, colorlinks, linkcolor=red, anchorcolor=yellow, citecolor=blue, bookmarks=false ]{hyperref}
+\usepackage[pagebackref=false, colorlinks, linkcolor=red, anchorcolor=yellow, citecolor=blue, bookmarks=false ]{hyperref}
+\usepackage{graphicx, subfig, epstopdf, amsmath, booktabs, paralist, float, caption, xfrac, enumitem, array, multirow, cite}
+
+%anonymous_review
+%\def\anonymous{yes}
+
+\usepackage{gbt7714}
+
+
+\ifx\anonymous\undefined
+	\def\author{饶智博}
+	\def\school{电子信息学院}
+	\def\mymajor{信息与通信工程}
+	\def\idnumber{2017100580}
+	\def\supervisedsir{何明一}
+	\def\anonymousSupervisedsir{何明一}
+	\def\sirposition{\  教授}
+	\def\authorEnglishName{\textbf{Z. Rao}$^*$}
+	\def\supervisedsirEnglishName{\textbf{M. He}$^\dag$}
+	\def\labName{陕西省“信息获取与处理”}
+	\def\subjectName{多视角几何}
+\else
+	\def\author{}
+	\def\school{}
+	\def\mymajor{}
+	\def\idnumber{}
+	\def\supervisedsir{}
+	\def\sirposition{}
+	\def\anonymousSupervisedsir{***}
+	\def\authorEnglishName{*}
+	\def\supervisedsirEnglishName{\dag}
+	\def\labName{***}
+	\def\subjectName{***}
+\fi
+
+\renewcommand\figureautorefname{图}		% 重新定义引用图标
+\renewcommand\tableautorefname{表}		% 重新定义应用表格
+\def\equationautorefname{式}				% 重新定义公式
+
+%% 设置 `论文题目' 
+\nputitle{遥感图像的语义分割与场景重建研究}
+\npunumber{\idnumber}
+\npuschool{\school}
+\npumajor{\mymajor}
+\npuname{\author}
+\npudegree{博士}
+\npusupervisor{ \supervisedsir \sirposition}
+\nputype{全日制学术型}
+\npudate{\today}
+
+% 博士
+\npucheckphdtrue
+% 第一次
+\npuchecksecondtrue
+
+%% 设置 `论文类型': 取消或添加注释即可勾选相应类型
+\npucheckbasetrue   	%  基础研究
+\npucheckapplytrue     	%  应用研究
+%\npucheckenginetrue   	%  工程技术
+%\npucheckoveralltrue   	%  跨学科研究
+
+\begin{document}
+
+\section{学位论文研究依据}
+\noindent{\kaishu 学位论文的选题依据和研究意义，国内外研究现状和发展态势，主要参考文献，以及已有的工作积累和研究成果。}
+\subsection{选题背景及其意义}
+\subsection{内容一}
+\subsection{内容二}
+
+\section{学位论文研究内容}
+\noindent{\kaishu 学位论文的研究目标、研究内容及拟解决的关键性问题（可续页）}
+\subsection{内容一}
+\subsection{内容二}
+
+
+
+\section{学位论文研究计划及预期目标}
+\subsection*{1. 拟采取的主要理论、研究方法、技术路线和实施方案（可续页）}
+
+\npubreak
+
+\subsection*{2. 研究计划可行性，研究条件落实情况，可能存在的问题及解决办法（可续页）}
+
+
+
+\subsection*{3.研究计划及预期成果}
+
+
+\bibliographystyle{gbt7714-numerical}
+%\bibliographystyle{abbrv}
+%\bibliographystyle{gbt7714}
+\bibliography{Cite}
+
+{
+  \hrule height0pt \vfill
+  \newlength{\tablesep}
+  \setlength{\tablesep}{5pt}
+  \noindent\hskip-\tablesep
+  %\hrule height0pt\vskip\npucorrecttop{%
+  \renewcommand{\arraystretch}{1.5}
+  \newcolumntype{C}{>{\hfil}X<{\hfil}}
+  \noindent\hskip-\npusep
+  \begin{tabularx}{\npuwidth}{>{\centering}c|c|C}\hline
+	\multirow{5}*{\parbox{0.05\npuwidth}{%
+          \centering 评\\议\\小\\组\\意\\见}}  & 起止年月 & 完成内容 \\
+          \cline{2-3}
+          							    & as & as \\
+	   \cline{2-3}
+          							    & as & as \\
+	   \cline{2-3}
+          							    & as & as \\
+	   \cline{2-3}					    
+	          						   & as & as \\
+	   \cline{2-3}
+          							    & as & as \\
+	\hline
+  \end{tabularx}
+}
+
+
+\noindent{\textbf{预期创新点及成果形式}}\\
+sakjsjka hsjka sasasa sa a
+%\item \authorEnglishName, \supervisedsirEnglishName, Z. Zhu, Y. Dai, R. He, and B. Li. "Bidirectional Guided Attention Network for 3D Semantic Detection on Pairwise Stereo Image." IEEE Transactions on Geoscience and Remote Sensing, 2020. (TGRS 一修)
+%\item \authorEnglishName, \supervisedsirEnglishName, Y. Dai, and Z. Shen. "Patch Attention Network with Generative Adversarial Model for Semi-Supervised Binocular Disparity Prediction." The Visual Computer, 2020. (TVCJ 在投)
+%\item \authorEnglishName, \supervisedsirEnglishName, Y. Dai, Z. Zhu, B. Li, and R. He. "NLCA-Net: A Non-Local Context Attention Network for Stereo Matching." APSIPA Transactions on Signal and Information Processing, 2020. (ATSIP 已录用)
+%\item \authorEnglishName, \supervisedsirEnglishName, Z. Zhu, Y. Dai, and R. He. "SDBF-Net: Semantic and Disparity Bidirectional Fusion Network for 3D Semantic Detection on Incidental Satellite Images." In 2019 Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), pp. 438-444. IEEE, 2019. (EI: 20201308362251)
+%\item \authorEnglishName, \supervisedsirEnglishName, Y. Dai, Z. Zhu, B. Li, and R. He. "MSDC-Net: Multi-Scale Dense and Contextual Networks for Stereo Matching." In 2019 Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), pp. 578-583. IEEE, 2019. (EI: 20201308362265)
+%\item \authorEnglishName, \supervisedsirEnglishName, and Z. Zhu. "Input-Perturbation-Sensitivity for Performance Analysis of CNNS on Image Recognition." In 2019 IEEE International Conference on Image Processing (ICIP), pp. 2496-2500. IEEE, 2019. (EI: 20195207921827)
+%\item Z. Zhu, \supervisedsirEnglishName, Y. Dai, \authorEnglishName, and B. Li. "Multi-scale Cross-form Pyramid Network for Stereo Matching." In 2019 14th IEEE Conference on Industrial Electronics and Applications (ICIEA), pp. 1789-1794. IEEE, 2019. (EI: 20194107525874)
+%\item Y. Dai, Z. Zhu, \authorEnglishName, and B. Li. "MVS2: Deep Unsupervised Multi-View Stereo with Multi-View Symmetry." In 2019 International Conference on 3D Vision (3DV), pp. 1-8. IEEE, 2019. (EI: 20194707701170)
+%\item D. Huang, \supervisedsirEnglishName, J. Liu, and \authorEnglishName. "TPMT based Automatic Road Extraction from 3D Real Scenes." In 2018 International Workshop on Big Geospatial Data and Data Science (BGDDS), pp. 1-5. IEEE, 2018. (EI: 20191106626554)
+%\item Z. Shen, Y. Dai, and \authorEnglishName. "MSMD-Net: Deep Stereo Matching with Multi-scale and Multi-dimension Cost Volume." In 2020 ACM Multimedia Conference (ACMMM). ACM, 2020. (ACMMM 在投)
+
+
+
+\end{document}
